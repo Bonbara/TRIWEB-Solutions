@@ -3,6 +3,7 @@
 
 body{
     font-family: "Commissioner", sans-serif;
+    margin: 0;
 }
 
 header{
@@ -10,4 +11,23 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: cornflowerblue;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+nav{
+    display: flex;
+    width: 800px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
