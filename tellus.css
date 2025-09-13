@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+
+body {
+    font-family: "Commissioner", sans-serif;
+    background-color: #1a103d;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 10px 0;
+}
+
+.navbar {
+    background: rgb(51, 127, 189);
+    padding: 0 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+ul.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbuttons {
+    display: flex;
+    gap: 10px;
+}
+
+.loginbtn {
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90px;
+    border: 1px solid purple;
+}
+
+.loginbtn a {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.questionsdiv {
+    background-color: rgba(216, 216, 216, 0.836);
+    max-width: 700px;
+}
+
+.centerquestionsdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  font-size: 28px
+}
+
+button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #45a049;
+  transition: background 0.3s ease;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+  display: none;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+input[type="text"], textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 2px solid #555;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #f9f9f9; 
+  color: #222;
+  transition: 0.3s;
+}
+
+
+input[type="text"]:focus, textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+  background-color: #fff;
+}

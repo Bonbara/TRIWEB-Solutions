@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRIWEB Solutions</title>
+    <link rel="stylesheet" href="tellus.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navdiv">
+                <div class="logo"><img src="logo.jpeg" alt="Logo"></div>
+                <ul class="navlinks">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="services.html">About Us</a></li>
+                    <li><a href="tellus.html">Tell Us</a></li>
+                </ul>
+                <div class="navbuttons">
+                    <button class="loginbtn"><a href="#">SignUp</a></button>
+                    <button class="loginbtn"><a href="#">SignIn</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <main>
+  <h1 style="text-align: center; color: white; margin: 70px 0 100px 0">TRIWEB Solutions Quiz</h1>
+<div class="instructions">
+  <form id="quizForm">
+    <div class="question">
+      <p>1. Which of these services are you interested in?</p>
+      <label><input type="radio" name="q1" value="3D Models"> 3D Models</label><br>
+      <label><input type="radio" name="q1" value="Thumbnails"> Thumbnails</label><br>
+      <label><input type="radio" name="q1" value="Web Design"> Web Design</label><br>
+      <label><input type="radio" name="q1" value="All of the above"> All of the above</label>
+    </div>
+
+    <div class="question">
+      <p>2. Please Describe it.</p>
+      <textarea name="q2" rows="4" cols="40" placeholder="Type your answer here..."></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+  <div id="result"></div>
+</main>
+
+    </main>
+    </body>
+   <script>
+document.getElementById("quizForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  let q1 = document.querySelector('input[name="q1"]:checked');
+  let q2 = document.querySelector('textarea[name="q2"]').value;
+
+  let resultText = "<h2>Results</h2>";
+
+  if (q1) {
+    resultText += "<p><b>Q1 Answer:</b> " + q1.value + "</p>";
+  } else {
+    resultText += "<p><b>Q1:</b> No answer selected</p>";
+  }
+
+  resultText += "<p><b>Q2 Answer:</b> " + (q2 ? q2 : "No answer given") + "</p>";
+
+  let resultDiv = document.getElementById("result");
+  resultDiv.innerHTML = resultText;
+  resultDiv.style.display = "block"; // make it appear
+});
+</script>
